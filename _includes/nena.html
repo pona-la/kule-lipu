@@ -1,0 +1,6 @@
+<a class="brand" href="/">{% include ponala.svg %} <span>{{ site.title }}</span></a>
+<ul class="navbar">
+{% for item in site.lawa %}
+  <li><a href="{{ item.linluwi }}">{{ item.nimi }}</a></li>
+{% endfor %}
+</ul>
