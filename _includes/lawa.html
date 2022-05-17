@@ -2,8 +2,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title contains site.title %}{{ page.title }}{% else %}{% if page.title %}{{ page.title }} pi {% endif %}{{ site.title }}{% endif %}</title>
 <meta content="{% if page.color %}{{ page.color }}{% else %}#c061cb{% endif %}" name="theme-color">
-<link rel="stylesheet" href="/assets/css/kule.css">
-<link rel="stylesheet" href="/assets/css/kule-tu.css">
+<link rel="stylesheet" href="{{ '/assets/css/kule.css' | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/kule-tu.css' | absolute_url }}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}tomo{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
