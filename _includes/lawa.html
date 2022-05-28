@@ -2,13 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title contains site.title %}{{ page.title }}{% else %}{% if page.title %}{{ page.title }} pi {% endif %}{{ site.title }}{% endif %}</title>
 <meta content="{% if page.color %}{{ page.color }}{% else %}#c061cb{% endif %}" name="theme-color">
-<link rel="stylesheet" href="{{ '/assets/css/kule.css' | absolute_url | remove: 'http:' | remove: 'https:' }}">
-<link rel="stylesheet" href="{{ '/assets/css/kule-tu.css' | absolute_url | remove: 'http:' | remove: 'https:' }}">
+<link rel="stylesheet" href="{{ '/assets/css/kule.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/kule-tu.css' | relative_url }}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}tomo{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/sitelen/ponala.png' | absolute_url }}{% endif %}">
-<link rel="shortcut icon" href="{% if page.favicon %}{{ page.favicon | absolute_url | remove: 'http:' | remove: 'https:' }}{% else %}{{ '/assets/sitelen/ponala.ico' | absolute_url | remove: 'http:' | remove: 'https:' }}{% endif %}">
+<link rel="shortcut icon" href="{% if page.favicon %}{{ page.favicon | relative_url }}{% else %}{{ '/assets/sitelen/ponala.ico' | relative_url }}{% endif %}">
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
