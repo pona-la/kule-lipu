@@ -150,8 +150,6 @@ main {
   margin: auto;
   margin-top: 0;
   padding: var(--page-padding);
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -223,8 +221,4 @@ footer {
   background-color: var(--red-button-background-color);
   color: var(--red-button-foreground-color);
   border-color: var(--red-button-border-color);
-}
-
-hr {
-  width:100%
 }
